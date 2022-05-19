@@ -17,7 +17,13 @@ public class Instantiator : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Instantiate(prefab);
+            for (int i = 0; 1<5;i++)
+            {
+                GameObject clon;
+                clon = Instantiate(prefab);
+                Destroy(clon, 1);
+            }
+            
         }
     }
 }
